@@ -1,4 +1,4 @@
-" Night Runner
+" NightRunnerDark (https://github.com/atelierbram/Base2Tone-vim)
 " Scheme: Pieter Joost van de Sande
 
 " GUI color definitions
@@ -20,9 +20,9 @@ let s:gui0E = "8E75F5"
 let s:gui0F = "7F63EE"
 
 " Terminal color definitions
-let s:cterm00 = "236   "
-let s:cterm01 = "237   "
-let s:cterm02 = "240   "
+let s:cterm00 = "17   "
+let s:cterm01 = "53   "
+let s:cterm02 = "144   "
 let s:cterm03 = "242   "
 let s:cterm04 = "245   "
 let s:cterm05 = "141   "
@@ -40,7 +40,7 @@ let s:cterm0F = "63    "
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "night-runner"
+let g:colors_name = "NightRunner"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
@@ -308,7 +308,7 @@ call <sid>hi("gitCommitSummary",  s:gui07, "", s:cterm07, "none", "none")
 " neovim terminal
 if has('nvim')
 hi! link TermCursor Cursor
-hi TermCursorNC ctermfg=236    ctermbg=179    guifg=s:gui00 guibg=s:gui09 guisp=NONE cterm=NONE gui=NONE
+hi TermCursorNC ctermfg=17    ctermbg=179    guifg=s:gui00 guibg=s:gui09 guisp=NONE cterm=NONE gui=NONE
   let g:terminal_color_0  = "#" . s:gui00
   let g:terminal_color_1  = "#" . s:gui0F
   let g:terminal_color_2  = "#" . s:gui02

@@ -1,4 +1,4 @@
-" Filename: Night_Runner.vim
+" Filename: NightRunner.vim
 " Scheme: Pieter Joost van de Sande
 " License: MIT License
 
@@ -22,12 +22,12 @@ let s:cuicolors = {
       \ }
 
 " The following condition only applies for the console and is the same
-" condition vim-colors-Night_Runner uses to determine which set of colors
+" condition vim-colors-NightRunner uses to determine which set of colors
 " to use.
-let s:Night_Runner_termcolors = get(g:, 'Night_Runner_termcolors', 256)
-if s:Night_Runner_termcolors != 256 && &t_Co >= 16
+let s:NightRunner_termcolors = get(g:, 'NightRunner_termcolors', 256)
+if s:NightRunner_termcolors != 256 && &t_Co >= 16
   let s:cuiindex = 0
-elseif s:Night_Runner_termcolors == 256
+elseif s:NightRunner_termcolors == 256
   let s:cuiindex = 1
 else
   let s:cuiindex = 2
@@ -75,7 +75,7 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base03, s:yellow ] ]
 
-let g:lightline#colorscheme#Night_Runner#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#NightRunner#palette = lightline#colorscheme#flatten(s:p)
 let s:base03 = [ '#272433', 17   ]
 let s:base02 = [ '#322F42', 53   ]
 let s:base01 = [ '#696383', 245   ]
@@ -118,5 +118,5 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base03, s:yellow ] ]
 
-let g:lightline#colorscheme#Night_Runner#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#NightRunner#palette = lightline#colorscheme#flatten(s:p)
 
