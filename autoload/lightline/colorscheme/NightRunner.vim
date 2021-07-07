@@ -1,11 +1,10 @@
-" Filename: Night Runner.vim (https://github.com/atelierbram/Base2Tone-vim/blob/master/autoload/lightline/colorscheme/Night Runner.vim)
+" Filename: Night_Runner.vim
 " Scheme: Pieter Joost van de Sande
-" Info: http://base2t.one/
 " License: MIT License
 
 let s:cuicolors = {
-      \ 'base03': [ '8', '236   ', 'DarkGray' ],
-      \ 'base02': [ '0', '237   ', 'Black' ],
+      \ 'base03': [ '8', '17   ', 'DarkGray' ],
+      \ 'base02': [ '0', '53   ', 'Black' ],
       \ 'base01': [ '10', '245   ', 'LightGreen' ],
       \ 'base00': [ '11', '246   ', 'LightYellow' ],
       \ 'base0':  [ '12', '248   ', 'LightBlue' ],
@@ -23,12 +22,12 @@ let s:cuicolors = {
       \ }
 
 " The following condition only applies for the console and is the same
-" condition vim-colors-Night Runner uses to determine which set of colors
+" condition vim-colors-Night_Runner uses to determine which set of colors
 " to use.
-let s:Night Runner_termcolors = get(g:, 'Night Runner_termcolors', 256)
-if s:Night Runner_termcolors != 256 && &t_Co >= 16
+let s:Night_Runner_termcolors = get(g:, 'Night_Runner_termcolors', 256)
+if s:Night_Runner_termcolors != 256 && &t_Co >= 16
   let s:cuiindex = 0
-elseif s:Night Runner_termcolors == 256
+elseif s:Night_Runner_termcolors == 256
   let s:cuiindex = 1
 else
   let s:cuiindex = 2
@@ -76,9 +75,9 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base03, s:yellow ] ]
 
-let g:lightline#colorscheme#Night Runner#palette = lightline#colorscheme#flatten(s:p)
-let s:base03 = [ '#272433', 236   ]
-let s:base02 = [ '#322F42', 237   ]
+let g:lightline#colorscheme#Night_Runner#palette = lightline#colorscheme#flatten(s:p)
+let s:base03 = [ '#272433', 17   ]
+let s:base02 = [ '#322F42', 53   ]
 let s:base01 = [ '#696383', 245   ]
 let s:base00 = [ '#7E7897', 246   ]
 let s:base0 = [ '#9490A7', 248   ]
@@ -119,5 +118,5 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:base03, s:red ] ]
 let s:p.normal.warning = [ [ s:base03, s:yellow ] ]
 
-let g:lightline#colorscheme#Night Runner#palette = lightline#colorscheme#flatten(s:p)
+let g:lightline#colorscheme#Night_Runner#palette = lightline#colorscheme#flatten(s:p)
 

@@ -1,4 +1,4 @@
-" Night RunnerDark (https://github.com/atelierbram/Base2Tone-vim)
+" Night Runner
 " Scheme: Pieter Joost van de Sande
 
 " GUI color definitions
@@ -40,7 +40,7 @@ let s:cterm0F = "63    "
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "Night RunnerDark"
+let g:colors_name = "night-runner"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
